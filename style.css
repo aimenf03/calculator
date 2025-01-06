@@ -35,7 +35,7 @@ header {
     border-radius: 15px;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
     background: transparent; 
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     cursor: pointer;
     margin: 10px;
@@ -50,10 +50,14 @@ form .display{
 form .display input{
     text-align: right;
     flex: 10px;
-    font-size: 45px;
+    font-size: 30px;
     box-shadow: black;
 }
 
 form input.equal{
     width: 165px;
+}
+
+form input.operator{
+    color: #F54E71;
 }
