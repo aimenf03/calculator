@@ -4,13 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleSign() {
+            const display = document.querySelector('input[name="display"]'); // Get the display input
+            const value = display.value.trim(); // Get the current value in the display
+            
+            if (value) {
+                if (value.startsWith('-')) {
+                    // If the value starts with '-', remove it to make it positive
+                    display.value = value.substring(1);
+                } else {
+                    // If the value is positive, add '-' to make it negative
+                    display.value = '-' + value;
+                }
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+
     <header>
         <h1>Pink Calculator</h1>
         <h2>for when you just need something pink in your life</h2>
     </header>
-</head>
-<body>
 <div class="container">
+    
     <div class="calculator">
         <form>
             <div class="display">
